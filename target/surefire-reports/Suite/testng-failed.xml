@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generic.TestNgListeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="Scripts.TestLogin">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="testLogin"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- Scripts.TestLogin -->
+      <class name="Scripts.TestInvalidLogin">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="testInvalidLogin"/>
+        </methods>
+      </class> <!-- Scripts.TestInvalidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
